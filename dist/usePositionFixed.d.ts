@@ -1,0 +1,12 @@
+import { Ref } from 'vue';
+
+interface PositionFixedOptions {
+    isOpen: Ref<boolean>;
+    modal: Ref<boolean>;
+    nested: Ref<boolean>;
+    hasBeenOpened: Ref<boolean>;
+}
+export declare function usePositionFixed(options: PositionFixedOptions): {
+    restorePositionSetting: () => void;
+};
+export {};
